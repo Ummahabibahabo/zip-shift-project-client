@@ -1,11 +1,12 @@
 import React from "react";
 import CustonNavLink from "./CustonNavLink";
+import Logo from "../../../Components/Logo";
 
 const Navbar = () => {
   const links = (
     <>
       <li>
-        <CustonNavLink to={"/"}>Services</CustonNavLink>
+        <CustonNavLink to="/">Services</CustonNavLink>
       </li>
       <li>
         <CustonNavLink to="/coverage">Coverage</CustonNavLink>
@@ -47,7 +48,9 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">
+          <Logo></Logo>
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
